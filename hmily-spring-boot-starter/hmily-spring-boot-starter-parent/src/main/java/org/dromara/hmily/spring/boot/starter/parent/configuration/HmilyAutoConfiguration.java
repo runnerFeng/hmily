@@ -39,7 +39,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @ComponentScan(basePackages = {"org.dromara.hmily"})
 public class HmilyAutoConfiguration {
 
-
     private final HmilyConfigProperties tccConfigProperties;
 
     @Autowired(required = false)
@@ -71,4 +70,5 @@ public class HmilyAutoConfiguration {
         hmilyTransactionBootstrap.setConcurrencyScale(tccConfigProperties.getConcurrencyScale());
         return hmilyTransactionBootstrap;
     }
+
 }

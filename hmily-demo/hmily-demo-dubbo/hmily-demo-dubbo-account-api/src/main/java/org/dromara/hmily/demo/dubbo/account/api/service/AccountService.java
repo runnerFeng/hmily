@@ -28,7 +28,6 @@ import org.dromara.hmily.demo.dubbo.account.api.entity.AccountDO;
 @SuppressWarnings("all")
 public interface AccountService {
 
-
     /**
      * 扣款支付
      *
@@ -48,7 +47,6 @@ public interface AccountService {
      */
     @Hmily
     boolean paymentWithNested(AccountNestedDTO accountNestedDTO);
-
 
     /**
      * 获取用户账户信息

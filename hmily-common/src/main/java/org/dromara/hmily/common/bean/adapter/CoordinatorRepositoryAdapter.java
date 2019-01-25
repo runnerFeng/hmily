@@ -77,8 +77,6 @@ public class CoordinatorRepositoryAdapter {
      */
     private byte[] contents;
 
-
-
     /**
      * 调用接口名称.
      */

@@ -44,7 +44,6 @@ public enum OrderStatusEnum {
      */
     PAY_SUCCESS(4, "支付成功");
 
-
     private int code;
 
     private String desc;

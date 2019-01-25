@@ -37,7 +37,6 @@ public interface OrderService {
      */
     String orderPay(Integer count, BigDecimal amount);
 
-
     /**
      * Test order pay string.
      *
@@ -46,7 +45,6 @@ public interface OrderService {
      * @return the string
      */
     String testOrderPay(Integer count, BigDecimal amount);
-
 
     /**
      * 创建订单并且进行扣除账户余额支付，并进行库存扣减操作
@@ -58,7 +56,6 @@ public interface OrderService {
      */
     String orderPayWithNested(Integer count, BigDecimal amount);
 
-
     /**
      * 模拟在订单支付操作中，库存在try阶段中的库存异常
      *
@@ -67,7 +64,6 @@ public interface OrderService {
      * @return string string
      */
     String mockInventoryWithTryException(Integer count, BigDecimal amount);
-
 
     /**
      * 模拟在订单支付操作中，库存在try阶段中的timeout
@@ -78,7 +74,6 @@ public interface OrderService {
      */
     String mockInventoryWithTryTimeout(Integer count, BigDecimal amount);
 
-
     /**
      * 模拟在订单支付操作中，库存在Confirm阶段中的异常
      *
@@ -87,7 +82,6 @@ public interface OrderService {
      * @return string string
      */
     String mockInventoryWithConfirmException(Integer count, BigDecimal amount);
-
 
     /**
      * 模拟在订单支付操作中，库存在Confirm阶段中的timeout
@@ -98,11 +92,11 @@ public interface OrderService {
      */
     String mockInventoryWithConfirmTimeout(Integer count, BigDecimal amount);
 
-
     /**
      * 更新订单状态
      *
      * @param order 订单实体类
      */
     void updateOrderStatus(Order order);
+
 }

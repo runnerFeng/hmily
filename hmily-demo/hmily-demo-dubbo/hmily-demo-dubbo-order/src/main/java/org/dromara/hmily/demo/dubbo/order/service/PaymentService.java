@@ -40,7 +40,6 @@ public interface PaymentService {
      */
     void testMakePayment(Order order);
 
-
     /**
      * 订单支付
      *
@@ -56,7 +55,6 @@ public interface PaymentService {
      */
     String mockPaymentInventoryWithTryException(Order order);
 
-
     /**
      * mock订单支付的时候库存超时
      *
@@ -65,7 +63,6 @@ public interface PaymentService {
      */
     String mockPaymentInventoryWithTryTimeout(Order order);
 
-
     /**
      * mock订单支付的时候库存确认异常
      *
@@ -73,7 +70,6 @@ public interface PaymentService {
      * @return String string
      */
     String mockPaymentInventoryWithConfirmException(Order order);
-
 
     /**
      * mock订单支付的时候库存确认超时

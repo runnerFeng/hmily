@@ -42,7 +42,6 @@ public class Order implements Serializable {
      */
     private String number;
 
-
     /**
      * 订单状态
      */
@@ -67,6 +66,5 @@ public class Order implements Serializable {
      * 购买人
      */
     private String userId;
-
 
 }

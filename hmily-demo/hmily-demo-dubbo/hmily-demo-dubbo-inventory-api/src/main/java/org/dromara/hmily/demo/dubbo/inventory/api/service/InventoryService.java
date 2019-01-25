@@ -28,7 +28,6 @@ import org.dromara.hmily.demo.dubbo.inventory.api.entity.InventoryDO;
  */
 public interface InventoryService {
 
-
     /**
      * 扣减库存操作
      * 这一个tcc接口
@@ -38,7 +37,6 @@ public interface InventoryService {
      */
     @Hmily
     Boolean decrease(InventoryDTO inventoryDTO);
-
 
     /**
      * Test decrease boolean.
@@ -56,7 +54,6 @@ public interface InventoryService {
      */
     InventoryDO findByProductId(String productId);
 
-
     /**
      * mock扣减库存异常
      *
@@ -65,7 +62,6 @@ public interface InventoryService {
      */
     @Hmily
     String mockWithTryException(InventoryDTO inventoryDTO);
-
 
     /**
      * mock扣减库存超时
@@ -76,7 +72,6 @@ public interface InventoryService {
     @Hmily
     Boolean mockWithTryTimeout(InventoryDTO inventoryDTO);
 
-
     /**
      * mock 扣减库存confirm异常
      *
@@ -86,7 +81,6 @@ public interface InventoryService {
     @Hmily
     String mockWithConfirmException(InventoryDTO inventoryDTO);
 
-
     /**
      * mock 扣减库存confirm超时
      *
@@ -95,6 +89,5 @@ public interface InventoryService {
      */
     @Hmily
     Boolean mockWithConfirmTimeout(InventoryDTO inventoryDTO);
-
 
 }
