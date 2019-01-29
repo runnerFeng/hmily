@@ -59,7 +59,6 @@ public class AccountServiceImpl implements AccountService {
         this.accountMapper = accountMapper;
     }
 
-
     static AtomicInteger trycount = new AtomicInteger(0);
 
     static AtomicInteger confrimCount = new AtomicInteger(0);
@@ -147,7 +146,6 @@ public class AccountServiceImpl implements AccountService {
         System.out.println("调用了account confrim " + i + " 次");
         return Boolean.TRUE;
     }
-
 
     @Transactional
     public boolean cancel(AccountDTO accountDTO) {

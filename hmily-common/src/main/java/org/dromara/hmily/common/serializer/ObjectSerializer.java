@@ -28,7 +28,7 @@ public interface ObjectSerializer {
     /**
      * 序列化对象.
      *
-     * @param obj 需要序更列化的对象
+     * @param obj 需要序列化的对象
      * @return byte []
      * @throws HmilyException 异常信息
      */

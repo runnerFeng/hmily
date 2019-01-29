@@ -60,7 +60,6 @@ public class InventoryServiceImpl implements InventoryService {
         this.inventoryMapper = inventoryMapper;
     }
 
-
     /**
      * 扣减库存操作
      * 这一个tcc接口

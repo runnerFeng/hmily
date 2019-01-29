@@ -39,7 +39,6 @@ public interface OrderMapper {
             " values ( #{createTime},#{number},#{status},#{productId},#{totalAmount},#{count},#{userId})")
     int save(Order order);
 
-
     /**
      * 更新订单
      *
